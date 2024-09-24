@@ -30,6 +30,13 @@ def run_left():
         draw_boy(10,y)
     pass
 
+def run_tri_bottom():
+    pass
+def run_tri_right():
+    pass
+def run_tri_left():
+    pass
+
 def run_circle():
 
     r=300
@@ -48,10 +55,15 @@ def run_rectangle():
     run_top()
     run_left()
     pass
-
+def run_triangle():
+    
+    run_tri_bottom()
+    run_tri_right()
+    run_tri_left()
 
 while True:
     #run_circle()
-    run_rectangle()
+    #run_rectangle()
+    run_triangle()
 
     break##임시로 넣음

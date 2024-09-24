@@ -73,8 +73,8 @@ def run_triangle():
     run_tri_left()
 
 while True:
-    #run_circle()
-    #run_rectangle()
+    run_circle()
+    run_rectangle()
     run_triangle()
 
     break##임시로 넣음

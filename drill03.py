@@ -3,10 +3,13 @@ from pico2d import*
 open_canvas()
 
 grass=load_image('grass.png')
-character = load_image('character.png')
+boy= load_image('character.png')
 
 def run_circle():
-    print('circle')
+    clear_canvas_now()
+    boy.draw_now(400,300)
+    delay(0.1)
+
     pass
 def run_rectangle():
     print('rectangle')
@@ -16,3 +19,4 @@ def run_rectangle():
 while True:
     run_rectangle()
     run_circle()
+    break##임시로 넣음

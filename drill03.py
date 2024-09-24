@@ -11,19 +11,16 @@ def draw_boy(x,y):
     delay(0.01)
 
 def run_top():
-    print('top')
     for x in range(800,10,-10):
         draw_boy(x,550)
     pass
 def run_right():
-    print('right')
     for y in range(90,550,10):
         draw_boy(790,y)
     pass
 def run_bottom():
     for x in range(10,800,10):
         draw_boy(x,90)
-    print('bottom')
     pass
 def run_left():
     for y in range(550,90,-10):
@@ -31,10 +28,24 @@ def run_left():
     pass
 
 def run_tri_bottom():
+    for x in range(10,700,10):
+        draw_boy(x,90)
     pass
 def run_tri_right():
-    pass
+    x=700
+    y=90
+    while(x>400):
+        draw_boy(x,y)
+        y=y+8
+        x=x-5
+    print(y)
 def run_tri_left():
+    x=400
+    y=570
+    while(x>100):
+        draw_boy(x,y)
+        y=y-8
+        x=x-5
     pass
 
 def run_circle():
@@ -56,7 +67,7 @@ def run_rectangle():
     run_left()
     pass
 def run_triangle():
-    
+
     run_tri_bottom()
     run_tri_right()
     run_tri_left()

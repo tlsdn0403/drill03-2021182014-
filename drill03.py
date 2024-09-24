@@ -16,6 +16,8 @@ def run_top():
     pass
 def run_right():
     print('right')
+    for y in range(550,0,-10):
+        draw_boy(790,y)
     pass
 def run_bottom():
     print('bottom')
@@ -45,7 +47,7 @@ def run_rectangle():
 
 
 while True:
-    run_circle()
+    #run_circle()
     run_rectangle()
 
     break##임시로 넣음
